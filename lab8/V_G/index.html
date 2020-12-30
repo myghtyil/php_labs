@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Текст и замена</title>
+  </head>
+  <body>
+    <form action="text_in.php" method="post">
+      <b>Введите текст</b><br>
+      <textarea class = "long_text" name="lt"></textarea><br>
+      <input type="submit" value="Записать">
+    </form>
+    <form action="replace.php" method="post">
+      что меняем<input type="text" name="founded"><br>
+      на что меняем<input type="text" name="replacement"><br>
+      <input type="submit" name="replace" value="Заменить">
+    </form>
+    <style>
+      .long_text
+      {
+        width: 300px;
+        height: 80px;
+      }
+      form
+      {
+        width: 400px;
+        height: 150px;
+        border: 1px solid;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+     </style>
+  </body>
+</html>
